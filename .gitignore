@@ -1,0 +1,27 @@
+# Visual Studio / .NET Core
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+.idea/
+.vscode/
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Secrets and Local Configurations
+appsettings.json
+**/appsettings.json
+*.secrets.json
+
+# Local debug artifacts
+flight_debug.json
+hotel_debug.json
+**/flight_debug.json
+**/hotel_debug.json
+
+# Ignore everything in the Presentation folder
+Presentation/*
+
+# EXCEPT the PowerPoint presentation
+!Presentation/Goodbye Chatbots, Hello Agents Building Your First Doer AI on Azure.pptx
