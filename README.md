@@ -8,7 +8,7 @@ Welcome to the companion code for the Global Azure session **"Goodbye Chatbots, 
 
 To run this demo locally, you will need:
 1. **.NET 8 SDK** installed on your machine.
-2. **Azure AI Account** with a valid subscription and access to **Azure OpenAI**. You need a deployed Chat Completion model (like gpt-4o).
+2. **Azure AI Account** with a valid subscription and access to **Azure OpenAI**. You need a deployed Chat Completion model (like `gpt-4o`).
 3. **Free Accounts** for external API integrations (SerpApi, OpenWeatherMap, Resend).
 
 ---
@@ -18,8 +18,8 @@ To run this demo locally, you will need:
 ### 1. Azure OpenAI (The Agent's Brain)
 1. Go to the [Azure Portal](https://portal.azure.com).
 2. Start by creating an **Azure OpenAI** resource. 
-3. Open **Azure AI Studio** and navigate to **Deployments**. Deploy a chat model (e.g., gpt-4o). Note down the **Deployment Name**.
-4. Navigate back to your Azure OpenAI resource -> **Keys and Endpoint**. Copy KEY 1 and the Endpoint URL.
+3. Open **Azure AI Studio** and navigate to **Deployments**. Deploy a chat model (e.g., `gpt-4o`). Note down the **Deployment Name**.
+4. Navigate back to your Azure OpenAI resource -> **Keys and Endpoint**. Copy `KEY 1` and the `Endpoint` URL.
 
 ### 2. SerpApi (Google Flights & Hotels)
 1. Go to [SerpApi.com](https://serpapi.com/) and register for a free account.
@@ -42,14 +42,14 @@ To run this demo locally, you will need:
 ## ⚙️ Setup & Configuration
 
 1. Clone this repository and navigate to the project directory:
-   `ash
+   ```bash
    cd TravelAgentDemo
-   `
-2. You will find a file named ppsettings.example.json inside this folder.
-3. **Rename or copy** this file to ppsettings.json.
-4. Open your new ppsettings.json and paste all your freshly acquired API keys:
+   ```
+2. You will find a file named `appsettings.example.json` inside this folder.
+3. **Rename or copy** this file to `appsettings.json`.
+4. Open your new `appsettings.json` and paste all your freshly acquired API keys:
 
-`json
+```json
 {
   "AzureOpenAI": {
     "Endpoint": "https://<your-resource-name>.openai.azure.com/",
@@ -66,19 +66,19 @@ To run this demo locally, you will need:
     "ApiKey": "<your-resend-key>"
   }
 }
-`
+```
 
 ---
 
 ## 🚀 How to Run the App
 
 1. Open your terminal (PowerShell, CMD, or bash).
-2. Ensure you are in the directory containing TravelAgentDemo.csproj (e.g. cd TravelAgentDemo).
+2. Ensure you are in the directory containing `TravelAgentDemo.csproj` (e.g. `cd TravelAgentDemo`).
 3. Build and launch the console application using the .NET CLI:
-   `ash
+   ```bash
    dotnet run
-   `
-4. Wait a few seconds for the kernel to initialize. You will be greeted by the [You] To Travel Agent: prompt!
+   ```
+4. Wait a few seconds for the kernel to initialize. You will be greeted by the `[You] To Travel Agent:` prompt!
 
 ---
 
